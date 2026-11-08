@@ -9,10 +9,10 @@ export const overviewMetrics = [
 ]
 
 export const systemData = [
-  { id: 'A', name: 'Environment A', usage: 64, status: 'Demo' },
-  { id: 'B', name: 'Environment B', usage: 38, status: 'Demo' },
-  { id: 'C', name: 'Environment C', usage: 46, status: 'Demo' },
-  { id: 'D', name: 'Environment D', usage: 62, status: 'Demo' },
+  { id: 'A', name: 'Environment SYS0', usage: 64, status: 'Demo' },
+  { id: 'B', name: 'Environment SYS0A', usage: 38, status: 'Demo' },
+  { id: 'C', name: 'Environment SYS0B', usage: 46, status: 'Demo' },
+  { id: 'D', name: 'Environment SYS0C', usage: 62, status: 'Demo' },
 ]
 
 const today = '08 Nov 2026'
@@ -24,14 +24,14 @@ export const pageConfigs = {
     columns: ['Record ID', 'Batch', 'Environment', 'Started', 'Status', 'Duration'],
     filters: ['All statuses', 'Running', 'Completed', 'On Hold', 'Failed'],
     rows: [
-      ['DEMO-1001', 'Account Summary', 'Environment A', '09:10 AM', 'Running', '00:32:18'],
-      ['DEMO-1002', 'Position Review', 'Environment B', '09:25 AM', 'Running', '00:27:06'],
-      ['DEMO-1003', 'Reference Update', 'Environment C', '08:40 AM', 'Completed', '00:18:42'],
-      ['DEMO-1004', 'Sample Reconciliation', 'Environment D', '10:05 AM', 'On Hold', '00:12:09'],
-      ['DEMO-1005', 'Demo Data Refresh', 'Environment A', '10:20 AM', 'Failed', '00:04:51'],
-      ['DEMO-1006', 'Illustrative File Check', 'Environment B', '10:35 AM', 'Running', '00:08:15'],
-      ['DEMO-1007', 'Daily Summary', 'Environment C', '08:15 AM', 'Completed', '00:21:30'],
-      ['DEMO-1008', 'Sample Validation', 'Environment D', '11:00 AM', 'Running', '00:02:11'],
+      ['DEMO-1001', 'Account Summary', 'Environment SYS0', '09:10 AM', 'Running', '00:32:18'],
+      ['DEMO-1002', 'Position Review', 'Environment SYS0A', '09:25 AM', 'Running', '00:27:06'],
+      ['DEMO-1003', 'Reference Update', 'Environment SYS0B', '08:40 AM', 'Completed', '00:18:42'],
+      ['DEMO-1004', 'Sample Reconciliation', 'Environment SYS0B', '10:05 AM', 'On Hold', '00:12:09'],
+      ['DEMO-1005', 'Demo Data Refresh', 'Environment SYS0', '10:20 AM', 'Failed', '00:04:51'],
+      ['DEMO-1006', 'Illustrative File Check', 'Environment SYS0A', '10:35 AM', 'Running', '00:08:15'],
+      ['DEMO-1007', 'Daily Summary', 'Environment SYS0B', '08:15 AM', 'Completed', '00:21:30'],
+      ['DEMO-1008', 'Sample Validation', 'Environment SYS0C', '11:00 AM', 'Running', '00:02:11'],
     ],
   },
   regions: {
@@ -41,10 +41,10 @@ export const pageConfigs = {
     columns: ['Record ID', 'Region', 'Environment', 'Purpose', 'Status', 'Last Updated'],
     filters: ['All statuses', 'Available', 'In Use', 'Under Review'],
     rows: [
-      ['REG-001', 'North Demo', 'Environment A', 'Functional testing', 'Available', today],
-      ['REG-002', 'South Demo', 'Environment B', 'Integration testing', 'In Use', today],
-      ['REG-003', 'West Demo', 'Environment C', 'Regression testing', 'Under Review', '07 Nov 2026'],
-      ['REG-004', 'East Demo', 'Environment D', 'User acceptance', 'Available', '07 Nov 2026'],
+      ['REG-001', 'North Demo', 'Environment SYS0', 'Functional testing', 'Available', today],
+      ['REG-002', 'South Demo', 'Environment SYS0A', 'Integration testing', 'In Use', today],
+      ['REG-003', 'West Demo', 'Environment SYS0B', 'Regression testing', 'Under Review', '07 Nov 2026'],
+      ['REG-004', 'East Demo', 'Environment SYS0C', 'User acceptance', 'Available', '07 Nov 2026'],
     ],
   },
   'background-jobs': {
@@ -54,10 +54,10 @@ export const pageConfigs = {
     columns: ['Record ID', 'Job Name', 'Environment', 'Category', 'Status', 'Updated'],
     filters: ['All statuses', 'Running', 'Queued', 'Completed', 'Failed'],
     rows: [
-      ['JOB-001', 'Demo Scheduler', 'Environment A', 'Scheduled', 'Running', today],
-      ['JOB-002', 'Sample Import', 'Environment B', 'Data processing', 'Queued', today],
-      ['JOB-003', 'Report Preview', 'Environment C', 'Reporting', 'Completed', '07 Nov 2026'],
-      ['JOB-004', 'Demo Validation', 'Environment D', 'Validation', 'Failed', '07 Nov 2026'],
+      ['JOB-001', 'Demo Scheduler', 'Environment SYS0', 'Scheduled', 'Running', today],
+      ['JOB-002', 'Sample Import', 'Environment SYS0A', 'Data processing', 'Queued', today],
+      ['JOB-003', 'Report Preview', 'Environment SYS0B', 'Reporting', 'Completed', '07 Nov 2026'],
+      ['JOB-004', 'Demo Validation', 'Environment SYS0C', 'Validation', 'Failed', '07 Nov 2026'],
     ],
   },
   incidents: {
@@ -67,10 +67,10 @@ export const pageConfigs = {
     columns: ['Record ID', 'Incident', 'Environment', 'Severity', 'Status', 'Opened'],
     filters: ['All statuses', 'Open', 'Investigating', 'Resolved'],
     rows: [
-      ['INC-001', 'Demo workflow delay', 'Environment A', 'Medium', 'Open', today],
-      ['INC-002', 'Sample validation warning', 'Environment C', 'Low', 'Investigating', today],
-      ['INC-003', 'Illustrative queue alert', 'Environment B', 'High', 'Resolved', '07 Nov 2026'],
-      ['INC-004', 'Demo report mismatch', 'Environment D', 'Low', 'Open', '06 Nov 2026'],
+      ['INC-001', 'Demo workflow delay', 'Environment SYS0', 'Medium', 'Open', today],
+      ['INC-002', 'Sample validation warning', 'Environment SYS0A', 'Low', 'Investigating', today],
+      ['INC-003', 'Illustrative queue alert', 'Environment SYS0B', 'High', 'Resolved', '07 Nov 2026'],
+      ['INC-004', 'Demo report mismatch', 'Environment SYS0C', 'Low', 'Open', '06 Nov 2026'],
     ],
   },
   deviations: {
@@ -80,9 +80,9 @@ export const pageConfigs = {
     columns: ['Record ID', 'Deviation', 'Environment', 'Category', 'Status', 'Review Date'],
     filters: ['All statuses', 'New', 'Under Review', 'Approved', 'Closed'],
     rows: [
-      ['DEV-001', 'Sample threshold variance', 'Environment A', 'Process', 'Under Review', today],
-      ['DEV-002', 'Demo schedule variation', 'Environment B', 'Schedule', 'New', today],
-      ['DEV-003', 'Illustrative data difference', 'Environment C', 'Data', 'Closed', '07 Nov 2026'],
+      ['DEV-001', 'Sample threshold variance', 'Environment SYS0', 'Process', 'Under Review', today],
+      ['DEV-002', 'Demo schedule variation', 'Environment SYS0A', 'Schedule', 'New', today],
+      ['DEV-003', 'Illustrative data difference', 'Environment SYS0B', 'Data', 'Closed', '07 Nov 2026'],
     ],
   },
   'test-region': {
@@ -92,9 +92,9 @@ export const pageConfigs = {
     columns: ['Record ID', 'Item', 'Category', 'Environment', 'Status', 'Updated'],
     filters: ['All statuses', 'Available', 'In Review', 'Completed'],
     rows: [
-      ['TR-001', 'Sample test record', 'Functional', 'Environment A', 'Available', today],
-      ['TR-002', 'Demo scenario', 'Regression', 'Environment B', 'In Review', today],
-      ['TR-003', 'Illustrative validation', 'Integration', 'Environment C', 'Completed', '07 Nov 2026'],
+      ['TR-001', 'Sample test record', 'Functional', 'Environment SYS0', 'Available', today],
+      ['TR-002', 'Demo scenario', 'Regression', 'Environment SYS0A', 'In Review', today],
+      ['TR-003', 'Illustrative validation', 'Integration', 'Environment SYS0B', 'Completed', '07 Nov 2026'],
     ],
   },
   activities: {
@@ -104,10 +104,10 @@ export const pageConfigs = {
     columns: ['Record ID', 'Activity', 'Environment', 'Owner', 'Date', 'Status'],
     filters: ['All statuses', 'Planned', 'In Progress', 'Completed'],
     rows: [
-      ['ACT-001', 'Demo review meeting', 'Environment A', 'Team Alpha', '10 Nov 2026', 'Planned'],
-      ['ACT-002', 'Sample test cycle', 'Environment B', 'Team Beta', '11 Nov 2026', 'In Progress'],
-      ['ACT-003', 'Dashboard walkthrough', 'Environment C', 'Team Gamma', '12 Nov 2026', 'Planned'],
-      ['ACT-004', 'Illustrative sign-off', 'Environment D', 'Team Delta', '13 Nov 2026', 'Completed'],
+      ['ACT-001', 'Demo review meeting', 'Environment SYS0', 'Team Alpha', '10 Nov 2026', 'Planned'],
+      ['ACT-002', 'Sample test cycle', 'Environment SYS0A', 'Team Beta', '11 Nov 2026', 'In Progress'],
+      ['ACT-003', 'Dashboard walkthrough', 'Environment SYS0B', 'Team Gamma', '12 Nov 2026', 'Planned'],
+      ['ACT-004', 'Illustrative sign-off', 'Environment SYS0C', 'Team Delta', '13 Nov 2026', 'Completed'],
     ],
   },
   conversion: {
@@ -130,9 +130,9 @@ export const pageConfigs = {
     columns: ['Record ID', 'Request', 'Environment', 'Requested By', 'Status', 'Requested'],
     filters: ['All statuses', 'Requested', 'Under Review', 'Approved', 'Completed'],
     rows: [
-      ['RST-001', 'Demo restore review', 'Environment A', 'Demo User 1', 'Under Review', today],
-      ['RST-002', 'Sample point-in-time request', 'Environment B', 'Demo User 2', 'Requested', today],
-      ['RST-003', 'Illustrative recovery check', 'Environment C', 'Demo User 3', 'Completed', '07 Nov 2026'],
+      ['RST-001', 'Demo restore review', 'Environment SYS0', 'Demo User 1', 'Under Review', today],
+      ['RST-002', 'Sample point-in-time request', 'Environment SYS0A', 'Demo User 2', 'Requested', today],
+      ['RST-003', 'Illustrative recovery check', 'Environment SYS0B', 'Demo User 3', 'Completed', '07 Nov 2026'],
     ],
   },
 }
