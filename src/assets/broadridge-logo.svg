@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="100" viewBox="0 0 420 100">
+  <rect width="420" height="100" fill="none"/>
+  <g fill="#075451">
+    <path d="M8 18h56v64H8z" rx="8"/>
+    <path d="M22 31h28v10H22zm0 17h28v10H22zm0 17h18v10H22z" fill="#fff"/>
+    <text x="78" y="66" font-family="Arial,Helvetica,sans-serif" font-size="43" font-weight="700">Broadridge</text>
+  </g>
+</svg>
